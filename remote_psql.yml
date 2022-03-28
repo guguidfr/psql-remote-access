@@ -1,0 +1,21 @@
+---
+- hosts: node2
+  become: yes
+
+  vars_files:
+    - vars.yml
+
+  tasks:
+    - name: "Copiar archivo1 al servidor"
+      copy:
+        src: "{{ file1 }}"
+        dest: "{{ dest }}"
+
+    - name: "Copiar archivo2 al servidor"
+      copy:
+        src: "{{ file2 }}"
+        dest: "{{ dest }}"
+
+    - name: "Reiniciar postgresql"
+      shell: "service postgresql restart"
+      become: true

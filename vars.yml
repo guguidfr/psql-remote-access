@@ -1,3 +1,3 @@
-file1: /home/ansible/postgresql/remote_access/postgresql.conf
-file2: /home/ansible/postgresql/remote_access/pg_hba.conf
+file1: /home/ansible/postgresql/remote_psql_access/postgresql.conf
+file2: /home/ansible/postgresql/remote_psql_access/pg_hba.conf
 dest: /var/lib/pgsql/data

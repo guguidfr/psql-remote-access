@@ -10,11 +10,21 @@
       copy:
         src: "{{ file1 }}"
         dest: "{{ dest }}"
+        #      become: yes
+        #      become_user: root
 
     - name: "Copiar archivo2 al servidor"
       copy:
         src: "{{ file2 }}"
         dest: "{{ dest }}"
+        #      become: yes
+        #      become_user: root
+
+    - name: "Abrir puerto 5432 para tcp"
+      shell: "sudo firewall-cmd --zone=public --add-port=5432/tcp --permanent"
+
+    - name: "Reiniciar el firewall"
+      shell: "sudo firewall-cmd --reload"
 
     - name: "Reiniciar postgresql"
       shell: "service postgresql restart"

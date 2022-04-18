@@ -1,4 +1,4 @@
-# remote_psql_access
+# psql_remote_access
 Playbook de Ansible para habilitar el acceso remoto a Postgresql
 
 Los archivos ".conf" son archivos de configuración de Postgresql, que han sido modificados con la configuración necesaria para permitir el acceso remoto.

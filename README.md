@@ -11,3 +11,6 @@ Deberás modificar el archivo "hosts" poniendo las ip de los hosts a los que qui
 Una vez ejecutado el playbook, introduce el comando "psql -h (ip del servidor) -U (nombre de usuario) (nombre de la base de datos)" y así te conectarás de forma remota a tu servidor de base de datos.
 
 Ej: psql -h 192.168.40.60 -U root databse1
+--------------------------------------------
+## Información de la modificiación realizada:
+Se ha añadido una tasks que reinicia el firewall para que se apliquen los cambios

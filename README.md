@@ -14,3 +14,5 @@ Ej: psql -h 192.168.40.60 -U root databse1
 --------------------------------------------
 ## Información de la modificiación realizada:
 Se ha añadido una tasks que reinicia el firewall para que se apliquen los cambios
+#
+Playbook original de @ffrias9
